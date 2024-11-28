@@ -42,7 +42,7 @@ invoice_premiums AS (
   FROM 
     bowtie-data-analyst.Sample_Data_Set.invoice
   WHERE 
-    invoice_type = 'regular' AND status = 'paid'
+    status = 'paid'
   GROUP BY 
     policy_number
 )
@@ -61,11 +61,12 @@ GROUP BY
 `
 #### Results  
 policy_type	| average_net_premium
-New	344.7408
-Returning	282.3412
+New	344.74
+Returning	282.39
 
 
-### Q5 ii Create a dashboard to help management monitor the following business metrics
+### Q5 ii Create a dashboard to help management monitor the following business metrics  
+Dashboard Link: https://lookerstudio.google.com/reporting/692990bf-afa5-4ef0-b6db-4300934ff7f3
 
 
 
